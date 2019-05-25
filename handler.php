@@ -2,20 +2,6 @@
 
 class Handler{
 
-    function __construct(){
-        if( isset( $_POST['action'] ) ){
-            switch ( $_POST['action'] ) {
-                case 'get_palindrome':
-                    $this->find_palindrome();
-                    break;
-                
-                default:
-                    die();
-                    break;
-            }
-        }
-    }
-
     function find_palindrome(){
         $string = $_POST['input'];
         $palindromes = [];
@@ -42,4 +28,17 @@ class Handler{
     }
 }
 
+$handler = new Handler();
+
+if( isset( $_POST['action'] ) ){
+    switch ( $_POST['action'] ) {
+        case 'get_palindrome':
+            $handler->find_palindrome();
+            break;
+        
+        default:
+            die();
+            break;
+    }
+}
 ?>
