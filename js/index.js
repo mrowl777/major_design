@@ -32,13 +32,13 @@ function get_data( string ){
 function on_handler_answer( data ){
   var response = $.parseJSON( data );
   var input = $( '.input' );
-  
+
   if( response.result == 'not_found' ){
-    input.text( 'палидромы не обнаружены' );
+    input.val( 'палидромы не обнаружены' );
     return;
   }
 
-  input.text( response.data );
+  input.val( response.data );
 }
 
 document.addEventListener('DOMContentLoaded', function () {

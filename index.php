@@ -11,9 +11,5 @@
         <input type="text" placeholder="Введите строку" class="input">
         <img src="icon.png" alt="Поиск">
     </div>
-
-    <div class="data_block">
-    
-    </div>
     
 </body>
