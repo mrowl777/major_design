@@ -1,3 +1,5 @@
+<!-- Тут все понятно, описывать нечего по сути -->
+<!-- Подключаем стили, скрипты ставим иконку -->
 <head>
     <title>Поиск палидромов</title>
     <link href="css/index.css" rel="stylesheet" type="text/css" />
@@ -11,5 +13,5 @@
         <input type="text" placeholder="Введите строку" class="input">
         <img src="icon.png" alt="Поиск">
     </div>
-    
+
 </body>
